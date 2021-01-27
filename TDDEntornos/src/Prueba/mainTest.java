@@ -31,7 +31,7 @@ class mainTest extends main{
 
     @Test
     void testD() {
-        float[][] D = {{2,3,-1},{0,0.5f,-1},{-2,1,4}};
+        float[][] D = {{2,3,-1},{0,1f/2f,-1},{-2,1,4}};
         float actual = test(D);
         float expected = 11;
         assertEquals(expected, actual);
