@@ -7,22 +7,13 @@ public class main {
 
     }
 
-    public int prueba(int[][] num) {
-        int resultado = 0;
-        int[][] A = {{0,0,0},{0,0,0},{0,0,0}};
-        int[][] B = {{1,1,1},{1,1,1},{1,1,1}};
-        int[][] C = {{2,1,3},{-1,1,0},{-2,4,1}};
-        int[][] D = {{2,3,-1},{0,1/2,-1},{-2,1,4}};
-        if (Arrays.equals(num, A)) {
-            return 0;
-        } else if (Arrays.deepEquals(num, B)) {
-            return 1;
-        } else if (Arrays.deepEquals(num, C)) {
-            return -3;
-        } else if (Arrays.deepEquals(num, D)) {
-            return 11;
-        } else {
-            return resultado;
-        }
+    public float prueba(float[][] num) {
+        float[] uno = num[0];
+        float[] dos = num[1];
+        float[] tres = num[2];
+        float restar1 = (uno[0] * dos[1] * tres[2]) + (uno[1] * dos[2] * tres[0]) + (uno[2] * dos[0] * tres[1]);
+        float restar2 = (tres[0] * dos[1] * uno[2]) + (tres[1] * dos[2] * uno[0]) + (tres[2] * dos[0] * uno[1]);
+        float resultado = restar1 - restar2;
+        return resultado;
     }
 }
