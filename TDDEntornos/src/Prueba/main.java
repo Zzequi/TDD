@@ -9,4 +9,9 @@ public class main {
         float minus2 = (tres[0] * dos[1] * uno[2]) + (tres[1] * dos[2] * uno[0]) + (tres[2] * dos[0] * uno[1]);
         return minus1 - minus2;
     }
+
+    public float[] test2(float[][] num) {
+        float[] resultado = {0};
+        return resultado;
+    }
 }

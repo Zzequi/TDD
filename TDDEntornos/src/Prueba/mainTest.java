@@ -36,4 +36,20 @@ class mainTest extends main{
         float expected = 11;
         assertEquals(expected, actual);
     }
+
+    @Test
+    void testK() {
+        float[][] K = {{3,2,1,1},{5,3,4,2},{1,1,-1,1}};
+        float[] actual = test2(K);
+        float[] expected = {-4,6,1};
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void testK2() {
+        float[][] K = {{1,1,1,34f/15f},{1,-1,1,-16f/15f},{5,3,-1,8}};
+        float[] actual = test2(K);
+        float[] expected =  {3f/5f,5f/3f,0};
+        assertEquals(expected, actual);
+    }
 }
