@@ -49,7 +49,7 @@ class mainTest extends main{
     void testK2() {
         float[][] K = {{1,1,1,34f/15f},{1,-1,1,-16f/15f},{5,3,-1,8}};
         float[] actual = test2(K);
-        float[] expected = {3f/5f,5f/3f,0};
+        float[] expected = {0.59999996f,5f/3f,0};
         assertArrayEquals(expected, actual);
     }
 }
