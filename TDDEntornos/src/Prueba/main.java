@@ -11,7 +11,11 @@ public class main {
     }
 
     public float[] test2(float[][] num) {
-        float[] resultado = {0};
+        float [][] A = {{num[0][0],num[0][1], num [0][2]},{num[1][0],num[1][1], num [1][2]},{num[2][0],num[2][1], num [2][2]}};
+        float[][] Mx = {{num[0][3], num[0][1], num[0][2]}, {num[1][3], num[1][1], num[1][2]}, {num[2][3], num[2][1], num[2][2]}};
+        float[][] My = {{num[0][0], num[0][3], num[0][2]}, {num[1][0], num[1][3], num[1][2]}, {num[2][0], num[2][3], num[2][2]}};
+        float[][] Mz = {{num[0][0], num[0][1], num[0][3]}, {num[1][0], num[1][1], num[1][3]}, {num[2][0], num[2][1], num[2][3]}};
+        float[] resultado = {test(Mx)/test(A), test(My)/test(A), test(Mz)/test(A)};
         return resultado;
     }
 }
